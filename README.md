@@ -1,1 +1,1 @@
-To view our site and see your contributions, visit  www.free-code-camp-seoul.github.io
+To view our site and see your contributions, visit  https://free-code-camp-seoul.github.io/
