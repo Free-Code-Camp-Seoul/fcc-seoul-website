@@ -10,7 +10,7 @@ Collaborators should contribute by **making a new branch** instead of forking th
 
 ## How to Contribute to this Project (if you're not an FCC Seoul Collaborator)
 
-Any contributions to this repo **must** follow our code formatting and linting rules. The easiest way is to use the [Prettier]<https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode> extension for your code editor. Most of the members use VS Code but you're welcome to use other editors. Pull requests that don't follow Prettier's linting rules will not be merged.
+Any contributions to this repo **must** follow our code formatting and linting rules. The easiest way is to use the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for your code editor. Most of the members use VS Code but you're welcome to use other editors. Pull requests that don't follow Prettier's linting rules will not be merged.
 
 1. Required: your own GitHub account. Sign up at Github.com.
 2. Fork this repo by clicking on the Fork link (top right corner).
