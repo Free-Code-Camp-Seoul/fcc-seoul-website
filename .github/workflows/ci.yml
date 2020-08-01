@@ -1,5 +1,8 @@
 name: Continuous Integration
-on: push
+on:
+  pull_request:
+    branch:
+      - master
 
 jobs:
   testing:
