@@ -1,78 +1,92 @@
 // UI Elements
-const $member = document.querySelector('#member__container')
-const $events = document.querySelector('#events__container')
-const $photos = document.querySelector('#photos__container')
-
+const $member = document.querySelector("#member__container");
+const $events = document.querySelector("#events__container");
+const $photos = document.querySelector("#photos__container");
 
 // Mustache Templates
-const profileTemplate = document.querySelector('#profile__template').innerHTML
-const eventsTemplate = document.querySelector('#events__template').innerHTML
-const photosTemplate = document.querySelector('#photos__template').innerHTML
+const profileTemplate = document.querySelector("#profile__template").innerHTML;
+const eventsTemplate = document.querySelector("#events__template").innerHTML;
+const photosTemplate = document.querySelector("#photos__template").innerHTML;
 
 // data
 const members = {
-	"stooges": [
-		{
-			"name": "Simon",
-			"github": "https://github.com/simonhlee97",
-			"photo": "./simon.jpg",
-			"quote": "VueJS, you had me at Hello World"
-		},
-		{
-			"name": "Larry",
-			"github": "https://github.com/simonhlee97",
-			"photo": "./simon.jpg",
-			"quote": "We graduated with the highest temperatures in our class."
-		},
-		{
-			"name": "Curly",
-			"github": "https://github.com/simonhlee97",
-			"photo": "./simon.jpg",
-			"quote": "I baked a cake once, but it fell and killed the cat."
-		},
-		{
-			"name": "Moe",
-			"github": "https://github.com/simonhlee97",
-			"photo": "./simon.jpg",
-			"quote": "Queenie, he's got the strongest feet in the kingdom."
-		}
-	]
-}
+  stooges: [
+    {
+      name: "Simon",
+      github: "https://github.com/simonhlee97",
+      photo: "./simon.jpg",
+      quote: "VueJS, you had me at Hello World",
+    },
+    {
+      name: "Larry",
+      github: "https://github.com/simonhlee97",
+      photo: "./simon.jpg",
+      quote: "We graduated with the highest temperatures in our class.",
+    },
+    {
+      name: "Curly",
+      github: "https://github.com/simonhlee97",
+      photo: "./simon.jpg",
+      quote: "I baked a cake once, but it fell and killed the cat.",
+    },
+    {
+      name: "Moe",
+      github: "https://github.com/simonhlee97",
+      photo: "./simon.jpg",
+      quote: "Queenie, he's got the strongest feet in the kingdom.",
+    },
+  ],
+};
 
 const events = {
-	"fccevents": [
-		{
-			"date": "10-11-2020",
-			"title": "Guest Speaker - Mark Zuckerberg",
-			"description": "Mark will speak about this new social media app called Facebook (haha)"
-		},
-		{
-			"date": "10-18-2020",
-			"title": "Coding Workshop - JavaScript and the DOM",
-			"description": "We will introduce how to use JS to manipulate HTML elements"
-		},
-		{
-			"date": "10-25-2020",
-			"title": "Git and GitHub",
-			"description": "We will teach you how to get set up with GitHub and your own GitHub profile"
-		}
-	]
-}
+  fccevents: [
+    {
+      date: "10-12-2020",
+      title: "Guest Speaker - Mark Zuckerberg",
+      description:
+        "Mark will speak about this new social media app called Facebook (haha)",
+    },
+    {
+      date: "10-19-2020",
+      title: "Coding Workshop - JavaScript and the DOM",
+      description:
+        "We will introduce how to use JS to manipulate HTML elements",
+    },
+    {
+      date: "10-26-2020",
+      title: "Git and GitHub",
+      description:
+        "We will teach you how to get set up with GitHub and your own GitHub profile",
+    },
+  ],
+};
 
 const photos = {
-	"fccphotos": [
-		{ "imgurl": "https://res.cloudinary.com/ryucave/image/upload/v1600761102/fcc-seoul-home-page/beehive6_bunca1.jpg" },
-		{ "imgurl": "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive4_fprqew.png" },
-		{ "imgurl": "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive3_mg38ju.png" },
-		{ "imgurl": "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive1_b10mcq.png" }
-	]
-}
+  fccphotos: [
+    {
+      imgurl:
+        "https://res.cloudinary.com/ryucave/image/upload/v1600761102/fcc-seoul-home-page/beehive6_bunca1.jpg",
+    },
+    {
+      imgurl:
+        "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive4_fprqew.png",
+    },
+    {
+      imgurl:
+        "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive3_mg38ju.png",
+    },
+    {
+      imgurl:
+        "https://res.cloudinary.com/ryucave/image/upload/v1600761103/fcc-seoul-home-page/beehive1_b10mcq.png",
+    },
+  ],
+};
 
-const profileHtml = Mustache.render(profileTemplate, members)
-$member.insertAdjacentHTML('beforeend', profileHtml)
+const profileHtml = Mustache.render(profileTemplate, members);
+$member.insertAdjacentHTML("beforeend", profileHtml);
 
-const eventsHtml = Mustache.render(eventsTemplate, events)
-$events.insertAdjacentHTML('beforeend', eventsHtml)
+const eventsHtml = Mustache.render(eventsTemplate, events);
+$events.insertAdjacentHTML("beforeend", eventsHtml);
 
-const photosHtml = Mustache.render(photosTemplate, photos)
-$photos.insertAdjacentHTML('beforeend', photosHtml)
+const photosHtml = Mustache.render(photosTemplate, photos);
+$photos.insertAdjacentHTML("beforeend", photosHtml);
