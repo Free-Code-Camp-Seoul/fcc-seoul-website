@@ -82,3 +82,12 @@ $events.insertAdjacentHTML('beforeend', eventsHtml)
 
 const photosHtml = Mustache.render(photosTemplate, photos)
 $photos.insertAdjacentHTML('beforeend', photosHtml)
+
+const $member = document.querySelector("#member__container");
+const $events = document.querySelector("#events__container");
+const $photos = document.querySelector("#photos__container");
+
+// Mustache Templates
+const profileTemplate = document.querySelector("#profile__template").innerHTML;
+const eventsTemplate = document.querySelector("#events__template").innerHTML;
+const photosTemplate = document.querySelector("#photos__template").innerHTML;
