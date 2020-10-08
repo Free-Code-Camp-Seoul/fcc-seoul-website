@@ -1,190 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <title>FreeCodeCamp - Seoul Chapter</title>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        background-image: url("./skybg.jpg");
-        background-size: cover;
-        background-repeat: repeat-y;
-        font-family: "Avenir", Helvetica, sans-serif;
-      }
-      #navbar {
-        width: 100%;
-        height: 70px;
-        line-height: 70px;
-        text-align: center;
-        background-color: white;
-        margin: 0 auto;
-      }
-      #navbar > a {
-        display: inline;
-      }
-      .message-header {
-        display: block;
-      }
-      a:hover {
-        color: #fff;
-      }
-      .profilepic {
-        max-width: 90px;
-        border-radius: 50%;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Some New Code and Updates to our web page! This is a Mustache Template - to learn more go to www.javascripting.com/view/mustache-js -->
-    <script id="profile__template" type="text/html">
-      <div class="members">
-        {{#stooges}}
-        <div class="notification is-link">
-          <p class="is-size-6">{{name}}</p>
-          <img class="profilepic" src="{{photo}}" alt="simon" />
-          <p class="is-size-6">
-            <a href="{{github}}" target="_blank">GitHub</a>
-          </p>
-          <p>"{{ quote }}"</p>
-        </div>
-        {{/stooges}}
-      </div>
-    </script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<title>FreeCodeCamp - Seoul Chapter</title>
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				background-color: whitesmoke;
+			}
+			#navbar {
+				width: 100%;
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			#navbar > a {
+				display: inline;
+			}
+			.navbar-item.links:hover {
+				background: #1536a3;
+				color: white;
+			}
+			.message-header {
+				display: block;
+			}
+			a:hover {
+				color: #030452;
+				text-decoration: underline;
+			}
+			.profilepic {
+				max-width: 90px;
+				border-radius: 10px;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Some New Code and Updates to our web page! This is a Mustache Template - to learn more go to www.javascripting.com/view/mustache-js -->
+		<script id="profile__template" type="text/html">
+			<div class="members">
+				{{#stooges}}
+				<div class="notification is-link">
+					<p class="is-size-6">{{name}}</p>
+					<img class="profilepic" src="{{photo}}" alt="simon" />
+					<p class="is-size-6">
+						<a href="{{github}}" target="_blank">GitHub</a>
+					</p>
+					<p>"{{ quote }}"</p>
+				</div>
+				{{/stooges}}
+			</div>
+		</script>
 
-    <script id="events__template" type="text/html">
-      {{#fccevents}}
-      <div class="events my-6">
-        <article class="my-3 notification is-link">
-          <p class="is-size-5">{{date}}</p>
-          <p class="is-size-5">{{title}}</p>
-          <p class="is-size-6">{{description}}</p>
-        </article>
-      </div>
-      {{/fccevents}}
-    </script>
+		<script id="events__template" type="text/html">
+			{{#fccevents}}
+			<div class="events my-6">
+				<article class="my-3 notification is-primary">
+					<p class="is-size-5">{{date}}</p>
+					<p class="is-size-5">{{title}}</p>
+					<p class="is-size-6">{{description}}</p>
+				</article>
+			</div>
+			{{/fccevents}}
+		</script>
 
-    <script id="photos__template" type="text/html">
-      <div class="photos my-6 columns">
-        {{#fccphotos}}
-        <img src="{{imgurl}}" alt="fcc" class="column" />
-        {{/fccphotos}}
-      </div>
-    </script>
+		<script id="photos__template" type="text/html">
+			<div class="photos my-6 columns">
+				{{#fccphotos}}
+				<img src="{{imgurl}}" alt="fcc" class="column" />
+				{{/fccphotos}}
+			</div>
+		</script>
 
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <a href="#home" class="navbar-item">Home</a>
-      <a href="#members" class="navbar-item">Our Members</a>
-      <a href="#events" class="navbar-item">Events</a>
-      <a href="#photos" class="navbar-item">Photos</a>
-    </nav>
+		<!-- NAVBAR -->
+		<nav id="navbar">
+			<a href="#members" class="navbar-item links">Our Members</a>
+			<a href="#events" class="navbar-item links">Events</a>
+			<a href="#photos" class="navbar-item links">Photos</a>
+		</nav>
 
-    <div class="container my-6 has-text-centered">
-      <div id="home" class="has-text-light">
-        <p class="is-size-1">Hello World</p>
-        <p class="is-size-3">
-          We are the Seoul 🇰🇷 Chapter of
-          <a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a>, a
-          non-profit with chapters all over the world, teaching web development
-          for free online.
-        </p>
-        <p class="my-5 is-size-5">
-          This page will be all about FCC Seoul. We welcome contributions from
-          all FCC Seoul members. Let's use this site to practice our web
-          development skills!
-        </p>
-      </div>
+		<div class="container my-6 has-text-centered">
+			<div id="home">
+				<p class="is-size-1">Hello World</p>
+				<p class="is-size-3">
+					We are the Seoul 🇰🇷 Chapter of
+					<a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a>, a
+					non-profit with chapters all over the world, teaching web development for free
+					online.
+				</p>
+				<p class="my-5 is-size-5">
+					This page will be all about FCC Seoul. We welcome contributions from all FCC
+					Seoul members. Let's use this site to practice our web development skills!
+				</p>
+			</div>
 
-      <div class="notification is-danger is-light my-5">
-        UPDATE Sept. 2020: COVID-19 has forced us to relocate our meetups to the
-        cloud. We've been meeting on Zoom! We hope to resume our offline meetups
-        soon! Follow us on
-        <a
-          href="https://www.facebook.com/groups/free.code.camp.seoul"
-          target="_blank"
-          class="link is-info"
-          >our FB Page</a
-        >.
-      </div>
+			<div class="notification is-danger is-light my-5">
+				UPDATE Sept. 2020: COVID-19 has forced us to relocate our meetups to the cloud.
+				We've been meeting on Zoom! We hope to resume our offline meetups soon! Follow us on
+				<a
+					href="https://www.facebook.com/groups/free.code.camp.seoul"
+					target="_blank"
+					class="link is-info"
+					>our FB Page</a
+				>.
+			</div>
 
-      <div class="notification is-link is-light my-5">
-        <p>
-          <a
-            href="https://github.com/Free-Code-Camp-Seoul/free-code-camp-seoul.github.io"
-            target="_blank"
-            >Click here</a
-          >
-          to see the code for this project and to contribute.
-        </p>
-      </div>
+			<div class="notification is-primary is-light my-5">
+				<p>
+					<a
+						href="https://github.com/Free-Code-Camp-Seoul/free-code-camp-seoul.github.io"
+						target="_blank"
+						>Click here</a
+					>
+					to see the code for this project and to contribute.
+				</p>
+			</div>
 
-      <!-- <div class="level">
-			<p class="level-item has-text-centered">
-				<a class="link is-info" href="https://place.map.kakao.com/27465316">Kakao Maps</a></a>
+			<article class="message my-6 is-link">
+				<div id="members" class="message-header">
+					<p class="is-size-4">Meet some of our members:</p>
+				</div>
+				<div class="message-body" id="member__container"></div>
+				<!-- Mustache will use data from fcc.js and inject here! -->
+			</article>
+
+			<article class="message my-6 is-primary">
+				<div id="events" class="message-header">
+					<p class="is-size-4">Upcoming Events</p>
+				</div>
+				<div class="message-body" id="events__container">
+					<!-- Mustache will use data from fcc.js and inject here! -->
+				</div>
+			</article>
+
+			<article class="message my-6 is-link">
+				<div id="photos" class="message-header">
+					<p class="is-size-4">Photos from past meetups</p>
+				</div>
+				<div class="message-body" id="photos__container"></div>
+				<!-- Mustache will use data from fcc.js and inject here! -->
+			</article>
+		</div>
+		<!-- container -->
+
+		<footer class="py-5 has-text-centered">
+			<p>
+				This page was built with:
+				<a href="https://bulma.io" target="_blank">Bulma</a>,
+				<a href="http://mustache.github.io/" target="_blank">Mustache.js</a>
 			</p>
-			<p class="level-item has-text-centered">
-				<a class="link is-info" href="https://map.naver.com/v5/entry/place/37572989">Naver Maps</a></a>
-			</p>
-			<p class="level-item has-text-centered">
-				<i class="fas fa-map-signs fa-4x"></i>
-			</p>
-			<p class="level-item has-text-centered">
-				<a class="link is-info" href="https://goo.gl/maps/yQuBJ5ymnskXDAh49">Google Maps</a>
-			</p>
-			<p class="level-item has-text-centered">
-				<a href='https://www.facebook.com/groups/free.code.camp.seoul' class="link is-info">Our FB Page</a>
-			</p>
-		</div> -->
+			<p>Created by members of FreeCodeCamp Seoul</p>
+			<p>Last modified: September 2020</p>
+		</footer>
 
-      <article class="message my-6 is-link">
-        <div id="members" class="message-header">
-          <p class="is-size-4">Meet some of our members:</p>
-        </div>
-        <div class="message-body" id="member__container"></div>
-        <!-- Mustache will use data from fcc.js and inject here! -->
-      </article>
-
-      <article class="message my-6 is-link">
-        <div id="events" class="message-header">
-          <p class="is-size-4">Upcoming Events</p>
-        </div>
-        <div class="message-body" id="events__container"></div>
-        <!-- Mustache will use data from fcc.js and inject here! -->
-      </article>
-
-      <article class="message my-6 is-link">
-        <div id="photos" class="message-header">
-          <p class="is-size-4">Photos from past meetups</p>
-        </div>
-        <div class="message-body" id="photos__container"></div>
-        <!-- Mustache will use data from fcc.js and inject here! -->
-      </article>
-    </div>
-    <!-- container -->
-
-    <footer class="py-5 has-text-centered">
-      <p>
-        This page was built with:
-        <a href="https://bulma.io" target="_blank">Bulma</a>,
-        <a href="http://mustache.github.io/" target="_blank">Mustache.js</a>
-      </p>
-      <p>Created by members of FreeCodeCamp Seoul</p>
-      <p>Last modified: September 2020</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-    <script src="./fcc.js"></script>
-  </body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+		<script src="./fcc.js"></script>
+	</body>
 </html>
