@@ -18,10 +18,10 @@ const members = {
       quote: "VueJS, you had me at Hello World",
     },
     {
-      name: "Larry",
-      github: "https://github.com/simonhlee97",
-      photo: "./simon.jpg",
-      quote: "We graduated with the highest temperatures in our class.",
+      name: "Andrei Calinescu",
+      github: "https://github.com/drecali",
+      photo: "./andrei.jpg",
+      quote: "Optional semicolons forever!;",
     },
     {
       name: "Curly",
