@@ -1,0 +1,12 @@
+.Container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+
+  & .Button {
+    padding: 1rem 2rem;
+  }
+}
