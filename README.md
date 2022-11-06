@@ -2,6 +2,40 @@
 
 To view our site and see your contributions, visit <https://free-code-camp-seoul.github.io/>
 
+## Running the app
+
+- Install dependencies
+
+  ```bash
+  yarn
+  # or
+  yarn install
+  ```
+
+- Husky setup (only once)
+
+  ```bash
+  yarn prepare
+  ```
+
+- Run dev mode
+
+  ```bash
+  yarn dev
+  ```
+
+- Build the app
+
+  ```bash
+  yarn build
+  ```
+
+- Generate component/page
+
+  ```bash
+  yarn plop
+  ```
+
 ## Contributing as a FCC Seoul Collaborator
 
 Any contributions to this repo **must** follow our code formatting and linting rules. The easiest way is to use the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for your code editor. Most of the members use VS Code but you're welcome to use other editors. Pull requests that don't follow Prettier's linting rules will not be merged.
