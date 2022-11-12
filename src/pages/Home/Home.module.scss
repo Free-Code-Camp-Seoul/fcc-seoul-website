@@ -2,11 +2,43 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 0.5rem;
 
-  & .Button {
-    padding: 1rem 2rem;
+  & .Title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  & .Subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  & .Lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  & .Contributions {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  & .AnimationContainer {
+    margin-bottom: -800px;
+  }
+
+  & .GithubLink {
+    background-color: aliceblue;
+    border-radius: 6px;
+    display: flex;
+    padding: 5px;
+
+    & .GithubIcon {
+      height: 30px;
+    }
   }
 }
