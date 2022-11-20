@@ -1,0 +1,14 @@
+.Members {
+  display: block;
+
+  & .Title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  & .Members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
