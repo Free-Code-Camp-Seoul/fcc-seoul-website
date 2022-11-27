@@ -7,15 +7,11 @@ const PAGES = [
   { path: "/", label: "Home" },
   {
     path: "/members",
-    label: "Our Members",
+    label: "Members",
   },
   {
     path: "/events",
     label: "Events",
-  },
-  {
-    path: "/photos",
-    label: "Photos",
   },
 ];
 

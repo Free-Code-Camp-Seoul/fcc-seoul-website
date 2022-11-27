@@ -36,6 +36,12 @@ To view our site and see your contributions, visit <https://free-code-camp-seoul
   yarn plop
   ```
 
+- Don't forget to add the recommended extensions to your editor
+
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+
 ## Contributing as a FCC Seoul Collaborator
 
 Any contributions to this repo **must** follow our code formatting and linting rules. The easiest way is to use the [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for your code editor. Most of the members use VS Code but you're welcome to use other editors. Pull requests that don't follow Prettier's linting rules will not be merged.
