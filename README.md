@@ -1,6 +1,6 @@
 # Free Code Camp - Seoul Chapter
 
-To view our site and see your contributions, visit <https://free-code-camp-seoul.github.io/>
+To view our site and see your contributions, visit <https://fcc-seoul.fly.dev>
 
 ## Running the app
 
