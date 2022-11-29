@@ -59,4 +59,5 @@ Any contributions to this repo **must** follow our code formatting and linting r
 2. Fork this repo by clicking on the Fork link (top right corner).
 3. Download (or git Clone) to your local computer.
 4. Make changes and edits. Commit these changes, then push them to your remote repo.
-5. Submit a Pull request to the Free-Code-Camp-Seoul repo.
+5. Follow the conventional commit message format. See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for more details.
+6. Submit a Pull request to the Free-Code-Camp-Seoul repo.
