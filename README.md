@@ -36,11 +36,14 @@ To view our site and see your contributions, visit <https://free-code-camp-seoul
   yarn plop
   ```
 
-- Don't forget to add the recommended extensions to your editor
+- If you use VSCode, you can find the recommended extensions in `.vscode/extensions.json`
 
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+  - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+  - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 ## Contributing as a FCC Seoul Collaborator
 
