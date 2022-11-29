@@ -1,0 +1,11 @@
+.Footer {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 100%;
+
+  & > * {
+    color: #000;
+  }
+}

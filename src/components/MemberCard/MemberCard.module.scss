@@ -1,0 +1,49 @@
+.MemberCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 370px;
+
+  & .Avatar {
+    border-radius: 50%;
+  }
+
+  & .MemberInfo {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+
+    & .Name {
+      font-size: 2rem;
+    }
+
+    & .GithubButton {
+      background-color: transparent;
+      height: 1.5rem;
+
+      & .GithubIcon {
+        fill: white;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  & .Bio {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  & .Interests {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    & .Interest {
+      background-color: #2f21ae;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
