@@ -16,17 +16,6 @@
     text-align: center;
   }
 
-  & .Lead {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  & .Contributions {
-    font-size: 1rem;
-    text-align: center;
-  }
-
   & .AnimationContainer {
     margin-bottom: -800px;
   }
@@ -39,6 +28,19 @@
 
     & .GithubIcon {
       height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+    justify-content: flex-start;
+
+    & .Title {
+      font-size: 2.5rem;
+    }
+
+    & .Subtitle {
+      font-size: 1.2rem;
     }
   }
 }

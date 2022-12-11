@@ -1,6 +1,4 @@
 .Members {
-  display: block;
-
   & .Title {
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -10,5 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    & .Title {
+      font-size: 2.5rem;
+    }
   }
 }
