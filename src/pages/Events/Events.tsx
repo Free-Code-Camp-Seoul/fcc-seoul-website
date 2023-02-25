@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 import meetupImage from "public/assets/images/fcc-location.jpg";
 import kakaoMapsLogo from "public/assets/images/kakao-maps.png";
@@ -13,13 +14,12 @@ const KAKAO_MAPS_URL = "http://kko.to/fkhQtFpFz";
 interface EventsProps {}
 
 const Events = ({}: EventsProps) => {
+  const { t } = useTranslation("events");
   return (
     <div className={styles.Events}>
-      <p className={styles.Times}>Every Sunday from 12pm-5pm</p>
+      <p className={styles.Times}>{t("schedule")}</p>
       <Image alt="meetup location" className={styles.Image} src={meetupImage} />
-      <p className={styles.Location}>
-        4F Lounge - K-Square Gangnam 2 케이스퀘어강남2
-      </p>
+      <p className={styles.Location}>{t("address")}</p>
       <div className={styles.MapLinks}>
         <a
           className={styles.MapLink}
@@ -38,14 +38,7 @@ const Events = ({}: EventsProps) => {
           <Image className={styles.Logo} alt="naver maps" src={naverMapsLogo} />
         </a>
       </div>
-      <p className={styles.Description}>
-        At FCC Seoul meetups, you&apos;re welcome to do whatever you&apos;d
-        like. Some people self-study, or study with others, ask questions, show
-        off projects, talk coding careers, or interview prep. All are welcome!
-        No experience is required or expected. Bringing a 💻 laptop is
-        encouraged. Feel free to join and leave any time between 12pm-5pm. See
-        you soon!
-      </p>
+      <p className={styles.Description}>{t("description")}</p>
     </div>
   );
 };

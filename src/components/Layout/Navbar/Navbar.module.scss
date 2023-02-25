@@ -1,9 +1,33 @@
 .Navbar {
+  align-items: center;
   background-color: aliceblue;
   color: #000;
   display: flex;
   gap: 3rem;
   justify-content: center;
   padding: 1.5rem;
+  position: relative;
   width: 100%;
+
+  & .LanguageSwitch {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+    padding: 1rem;
+
+    & .LanguageSwitch {
+      right: 1rem;
+    }
+  }
 }

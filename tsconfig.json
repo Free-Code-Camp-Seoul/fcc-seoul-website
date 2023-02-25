@@ -18,7 +18,8 @@
     "paths": {
       "@/components/*": ["src/components/*"],
       "@/pages/*": ["src/pages/*"],
-      "@/assets/*": ["public/assets/*"]
+      "@/assets/*": ["public/assets/*"],
+      "@/const": ["src/const/index.ts"]
     },
     "incremental": true
   },

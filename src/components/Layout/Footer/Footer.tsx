@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 import styles from "./Footer.module.scss";
 
 interface FooterProps {}
 
 const Footer = ({}: FooterProps) => {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.Footer}>
-      <p>Made with ❤️ by FCC Seoul</p>
+      <p>{t("made-with-love")}</p>
     </div>
   );
 };

@@ -1,14 +1,14 @@
 import MemberCard from "@/components/MemberCard";
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 import styles from "./Members.module.scss";
 
-interface MembersProps {}
-
-const Members = ({}: MembersProps) => {
+const Members = () => {
+  const { t } = useTranslation("members");
   return (
     <div className={styles.Members}>
-      <p className={styles.Title}>Meet some of our members</p>
+      <p className={styles.Title}>{t("meet-members")}</p>
       <div className={styles.Members}>
         {MEMBERS.map((member) => (
           <MemberCard key={member.github} member={member} />
