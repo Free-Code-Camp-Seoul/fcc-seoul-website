@@ -20,7 +20,6 @@ function Home({ eventList }: HomeProps) {
     weekday: "long",
     month: "long",
     day: "numeric",
-    hour: "numeric",
   });
 
   return (

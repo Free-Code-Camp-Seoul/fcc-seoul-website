@@ -21,12 +21,14 @@
     gap: 1rem;
 
     & .NextMeetupTitle {
-      font-size: 3rem;
+      font-size: 2rem;
       line-height: 100%;
     }
 
     & .NextMeetupDate {
-      font-size: 2rem;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 100%;
     }
 
     & .MeetupLink {
