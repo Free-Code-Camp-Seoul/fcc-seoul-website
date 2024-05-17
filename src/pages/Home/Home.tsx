@@ -42,13 +42,14 @@ function Home({ eventList }: HomeProps) {
       <>{View}</>
       <NextSeo
         title="FreeCodeCamp Seoul 🇰🇷"
-        description={nextEvent}
+        description="FreeCodeCamp Seoul is a community of developers in Seoul, South Korea. We meet regularly to learn and share our knowledge. Join us!"
         canonical="https://fcc-seoul.fly.dev"
         openGraph={{
+          type: "website",
           url: "https://fcc-seoul.fly.dev/",
           title: "FreeCodeCamp Seoul 🇰🇷",
-          description: nextEvent,
-          siteName: "FreeCodeCamp Seoul 🇰🇷",
+          description:
+            "FreeCodeCamp Seoul is a community of developers in Seoul, South Korea. We meet regularly to learn and share our knowledge. Join us!",
         }}
         twitter={{
           handle: "@handle",
