@@ -17,7 +17,7 @@ const Events = ({}: EventsProps) => {
   const { t } = useTranslation("events");
   return (
     <div className={styles.Events}>
-      <p className={styles.Times}>{t("schedule")}</p>
+      <h1 className={styles.Times}>{t("schedule")}</h1>
       <Image alt="meetup location" className={styles.Image} src={meetupImage} />
       <p className={styles.Location}>{t("address")}</p>
       <div className={styles.MapLinks}>
