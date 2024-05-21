@@ -2,8 +2,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: calc(var(--homepage-layout-content-height));
-  justify-content: space-between;
 
   & .Title {
     font-size: 4rem;
@@ -11,7 +9,8 @@
   }
 
   & .AnimationContainer {
-    height: var(--animation-container-height);
+    height: 45vh;
+    margin-bottom: -50%;
   }
 
   & .NextMeetupContainer {
@@ -46,6 +45,10 @@
 
     & .Title {
       font-size: 2.5rem;
+    }
+
+    & .AnimationContainer {
+      height: 30vh;
     }
   }
 }

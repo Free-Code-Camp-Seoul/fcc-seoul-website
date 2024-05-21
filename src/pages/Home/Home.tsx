@@ -7,74 +7,14 @@ import animationData from "../../../public/assets/animations/coding.json";
 import { MEETUP_LINK } from "@/const";
 
 import styles from "./Home.module.scss";
-import { useRef } from "react";
 
 interface HomeProps {
   eventList: string[];
-}
-function setContentHeightTo(clientHeight: number): void {
-  var root = document.documentElement;
-  root.style.setProperty(
-    "--homepage-layout-content-height",
-    `${clientHeight}px`
-  );
-}
-
-function setAnimationHeightTo(clientHeight: number): void {
-  var root = document.documentElement;
-  root.style.setProperty("--animation-container-height", `${clientHeight}px`);
 }
 
 function Home({ eventList }: HomeProps) {
   const { t } = useTranslation("home");
   const { View } = useLottie(ANIMATION_OPTIONS);
-
-  // useRef because ... React
-  const div = useRef(null);
-  if (div.current) {
-    const root = document.documentElement;
-    const viewportHeight = root.clientHeight;
-    const containerDiv = div.current as HTMLDivElement;
-    const containerChildren = containerDiv.children;
-
-    // used to combat the padding in content
-    const remPixelsGapOrPadding = 16;
-    const titleHeight = containerChildren[0].clientHeight;
-    const meetupHeight = containerChildren[1].clientHeight;
-    const layoutContentDiv = containerDiv.parentElement as HTMLDivElement;
-    const navBarHeight = layoutContentDiv.previousElementSibling?.clientHeight;
-    const footerHeight = layoutContentDiv.nextElementSibling?.clientHeight;
-
-    if (navBarHeight && footerHeight) {
-      const whatLayoutContentHeightShouldBe =
-        viewportHeight -
-        navBarHeight -
-        6 * remPixelsGapOrPadding -
-        footerHeight -
-        1;
-
-      if (layoutContentDiv.clientHeight !== whatLayoutContentHeightShouldBe) {
-        setContentHeightTo(whatLayoutContentHeightShouldBe);
-      }
-
-      const availableSpaceForAnimation =
-        viewportHeight -
-        navBarHeight -
-        // padding-top
-        3 * remPixelsGapOrPadding -
-        titleHeight -
-        // gap from home container
-        remPixelsGapOrPadding -
-        meetupHeight -
-        // gap from home container
-        remPixelsGapOrPadding -
-        // padding-bottom
-        3 * remPixelsGapOrPadding -
-        footerHeight;
-
-      setAnimationHeightTo(availableSpaceForAnimation);
-    }
-  }
 
   const nextEvent = new Date(eventList?.[0]).toLocaleDateString("en-US", {
     weekday: "long",
@@ -83,7 +23,7 @@ function Home({ eventList }: HomeProps) {
   });
 
   return (
-    <div className={styles.Container} ref={div}>
+    <div className={styles.Container}>
       <h1 className={styles.Title}>FreeCodeCamp Seoul 🇰🇷</h1>
       <div className={styles.NextMeetupContainer}>
         <h1 className={styles.NextMeetupTitle}>{t("next-meetup")}</h1>
