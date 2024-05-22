@@ -3,8 +3,9 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
+import { poppins } from "src/const/fonts";
+
 import styles from "./Layout.module.scss";
-import { poppins } from "pages/fonts";
 
 interface LayoutProps {
   children: React.ReactNode;
