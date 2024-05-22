@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 import styles from "./Layout.module.scss";
+import { poppins } from "pages/fonts";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={styles.Layout}>
+    <div className={`${styles.Layout} ${poppins.className}`}>
       <Navbar />
       <div className={styles.Content}>{children}</div>
       <Footer />
