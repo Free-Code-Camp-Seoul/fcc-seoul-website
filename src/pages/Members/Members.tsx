@@ -8,7 +8,7 @@ const Members = () => {
   const { t } = useTranslation("members");
   return (
     <div className={styles.Members}>
-      <p className={styles.Title}>{t("meet-members")}</p>
+      <h1 className={styles.Title}>{t("meet-members")}</h1>
       <div className={styles.Members}>
         {MEMBERS.map((member) => (
           <MemberCard key={member.github} member={member} />
