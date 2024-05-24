@@ -2,12 +2,14 @@
   & .Title {
     font-size: 4rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   & .Members {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+    justify-content: space-evenly;
   }
 
   @media screen and (max-width: 768px) {
