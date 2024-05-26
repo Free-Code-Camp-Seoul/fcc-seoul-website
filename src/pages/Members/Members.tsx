@@ -1,9 +1,14 @@
-import MemberCard from "@/components/MemberCard";
 import { useTranslation } from "next-i18next";
-import React from "react";
+import React, { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
 
 import styles from "./Members.module.scss";
 import { MemberData } from "src/services/members";
+
+const DynamicMemberCard = dynamic(() => import("@/components/MemberCard"), {
+  loading: () => <p>Loading...</p>,
+});
 
 interface MemberProps {
   memberList: MemberData[];
@@ -14,11 +19,13 @@ const Members = ({ memberList }: MemberProps) => {
   return (
     <div className={styles.Members}>
       <h1 className={styles.Title}>{t("meet-members")}</h1>
-      <div className={styles.Members}>
-        {memberList.map((member) => (
-          <MemberCard key={member.githubUrl} member={member} />
-        ))}
-      </div>
+      <Suspense fallback={<Loading />}>
+        <div className={styles.Members}>
+          {memberList.map((member) => (
+            <DynamicMemberCard key={member.githubUrl} member={member} />
+          ))}
+        </div>
+      </Suspense>
     </div>
   );
 };
