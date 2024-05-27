@@ -1,8 +1,9 @@
-import MemberCard from "@/components/MemberCard";
 import { useTranslation } from "next-i18next";
 import React from "react";
 
 import styles from "./Members.module.scss";
+import MemberCard from "@/components/MemberCard";
+import { NextSeo } from "next-seo";
 
 const Members = () => {
   const { t } = useTranslation("members");
@@ -14,6 +15,7 @@ const Members = () => {
           <MemberCard key={member.github} member={member} />
         ))}
       </div>
+      <NextSeo title="Members" />
     </div>
   );
 };

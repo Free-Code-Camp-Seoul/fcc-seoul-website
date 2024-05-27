@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 import meetupImage from "public/assets/images/fcc-location.jpg";
 import kakaoMapsLogo from "public/assets/images/kakao-maps.png";
@@ -39,6 +40,7 @@ const Events = ({}: EventsProps) => {
         </a>
       </div>
       <p className={styles.Description}>{t("description")}</p>
+      <NextSeo title="Events" />
     </div>
   );
 };
