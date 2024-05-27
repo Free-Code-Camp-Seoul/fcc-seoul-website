@@ -11,4 +11,4 @@ export const MEMBERS_API =
  24 hours   = 1 day
  7 days     = 1 week
 */
-export const revalidateTime = 60 * 60 * 24 * 7;
+export const revalidateTime = 60 * 60;

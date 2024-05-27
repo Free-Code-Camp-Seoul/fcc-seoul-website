@@ -8,10 +8,10 @@ export interface MemberData {
   interests: string[];
 }
 
-export const getMemberInfo = async () => {
+export const getMemberInfo = async (): Promise<MemberData[]> => {
   const res = await fetch(MEMBERS_API);
   const responseJSON = await res.json();
-  const memberData = responseJSON.data as MemberData[];
+  const memberData = responseJSON.data;
 
   return memberData;
 };
