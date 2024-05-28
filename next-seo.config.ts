@@ -10,7 +10,7 @@ const config: DefaultSeoProps = {
   openGraph: {
     type: "website",
     url: "https://fcc-seoul.fly.dev/",
-    siteName: "SiteName",
+    siteName: "FreeCodeCamp Seoul",
     title: "FreeCodeCamp Seoul 🇰🇷",
     description:
       "FreeCodeCamp Seoul is a community of developers in Seoul, South Korea. We meet regularly to learn and share our knowledge. Join us!",
