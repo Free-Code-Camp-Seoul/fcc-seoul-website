@@ -1,7 +1,7 @@
 import { MEETUP_LINK } from "@/const";
 
 export const getMeetupInfo = async () => {
-  const meetupResponse = await fetch(MEETUP_LINK);
+  const meetupResponse = await fetch(MEETUP_LINK, { cache: "no-store" });
   const meetupText = await meetupResponse.text();
   // create an array with all the time elements with the class "text-[#00829B] text-sm font-medium uppercase"
   const eventList = meetupText.match(
