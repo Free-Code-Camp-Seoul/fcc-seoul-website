@@ -1,9 +1,7 @@
 "use client";
 
-//import React from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Events.module.scss";
-import { NextSeo } from "next-seo";
 
 import Image from "next/image";
 
@@ -42,7 +40,6 @@ const Events = () => {
         </a>
       </div>
       <p className={styles.Description}>{t("description")}</p>
-      <NextSeo title="Events" />
     </div>
   );
 };

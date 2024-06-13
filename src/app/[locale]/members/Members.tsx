@@ -1,9 +1,7 @@
 "use client";
 
-//import React from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Members.module.scss";
-import { NextSeo } from "next-seo";
 
 import MemberCard from "../components/MemberCard";
 
@@ -24,7 +22,6 @@ const Members = ({ memberList }: MemberProps) => {
           <MemberCard key={member.githubUrl} member={member} />
         ))}
       </div>
-      <NextSeo title="Members" />
     </div>
   );
 };

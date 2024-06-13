@@ -4,6 +4,10 @@ import Layout from "./components/Layout/Layout";
 import { NextIntlClientProvider } from "next-intl";
 import { locales } from "src/navigation";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { Metadata } from "next";
+import { defaultMetadata } from "src/const/seo";
+
+export const metadata: Metadata = defaultMetadata;
 
 type Props = {
   children: React.ReactNode;

@@ -1,9 +1,7 @@
 "use client";
 
-//import React from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Home.module.scss";
-import { NextSeo } from "next-seo";
 
 import { useLottie } from "lottie-react";
 
@@ -27,7 +25,7 @@ function Home({ eventList }: HomeProps) {
 
   return (
     <div className={styles.Container}>
-      <h1 className={styles.Title}>freeCodeCamp Seoul 🇰🇷</h1>
+      <h1 className={styles.Title}>FreeCodeCamp Seoul 🇰🇷</h1>
       <div className={styles.NextMeetupContainer}>
         <h1 className={styles.NextMeetupTitle}>{t("next-meetup")}</h1>
         <p className={styles.NextMeetupDate}>{nextEvent}</p>
@@ -41,7 +39,6 @@ function Home({ eventList }: HomeProps) {
         </a>
       </div>
       <>{View}</>
-      <NextSeo title="Welcome" />
     </div>
   );
 }
