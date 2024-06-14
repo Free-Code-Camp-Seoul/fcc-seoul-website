@@ -12,8 +12,6 @@ import naverMapsLogo from "@/assets/images/naver-maps.png";
 const NAVER_MAPS_URL = "https://naver.me/xaC9isrW";
 const KAKAO_MAPS_URL = "http://kko.to/fkhQtFpFz";
 
-//interface EventsProps {}
-
 const Events = () => {
   const t = useTranslations("events");
   return (

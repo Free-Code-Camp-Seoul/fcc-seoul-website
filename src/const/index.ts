@@ -11,4 +11,6 @@ export const MEMBERS_API =
  24 hours   = 1 day
  7 days     = 1 week
 */
-export const revalidateTime = 60 * 60;
+export const REVALIDATE_TIME = 60 * 60;
+
+export const LOCALES = ["en", "ko"];

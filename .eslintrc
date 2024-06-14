@@ -5,7 +5,7 @@
     "node": true
   },
   "extends": ["next", "next/core-web-vitals", "prettier"],
-  "plugins": ["@typescript-eslint", "react-hooks"],
+  "plugins": ["@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "settings": {
     "react": {
@@ -19,7 +19,5 @@
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
   }
 }

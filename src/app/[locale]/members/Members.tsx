@@ -2,9 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import styles from "./Members.module.scss";
-
-import MemberCard from "../components/MemberCard";
-
+import MemberCard from "@/components/MemberCard";
 import { MemberData } from "src/services/members";
 
 interface MemberProps {

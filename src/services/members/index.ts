@@ -1,4 +1,4 @@
-import { MEMBERS_API, revalidateTime } from "@/const";
+import { MEMBERS_API, REVALIDATE_TIME } from "@/const";
 
 export interface MemberData {
   name: string;
@@ -10,10 +10,11 @@ export interface MemberData {
 
 export const getMemberInfo = async (): Promise<MemberData[]> => {
   const res = await fetch(MEMBERS_API, {
-    next: { revalidate: revalidateTime },
+    next: { revalidate: REVALIDATE_TIME },
   });
+
   const responseJSON = await res.json();
-  const memberData = responseJSON.data;
+  const memberData = await responseJSON.data;
 
   return memberData;
 };

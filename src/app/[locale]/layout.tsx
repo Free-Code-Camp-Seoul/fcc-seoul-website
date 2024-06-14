@@ -1,6 +1,4 @@
-//import React from 'react';
-require("react-dom");
-import Layout from "./components/Layout/Layout";
+import Layout from "./BaseLayout";
 import { NextIntlClientProvider } from "next-intl";
 import { locales } from "src/navigation";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
@@ -23,8 +21,7 @@ export default async function LocaleLayout({
   params: { locale },
 }: Props) {
   unstable_setRequestLocale(locale);
-  // Providing all messages to the client
-  // is the easiest way to get started
+
   const messages = await getMessages();
 
   return (

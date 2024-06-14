@@ -1,13 +1,11 @@
 "use client";
 
-//import React from "react";
-
-import Footer from "./Footer/Footer";
-import Navbar from "./Navbar/Navbar";
+import Footer from "@/components/Layout/Footer";
+import Navbar from "@/components/Layout/Navbar";
 
 import { poppins } from "src/const/fonts";
 
-import styles from "./Layout.module.scss";
+import styles from "./BaseLayout.module.scss";
 
 interface LayoutProps {
   children: React.ReactNode;
