@@ -1,4 +1,4 @@
-import Layout from "./BaseLayout";
+import Layout from "@/components/Layout";
 import { NextIntlClientProvider } from "next-intl";
 import { locales } from "src/navigation";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
