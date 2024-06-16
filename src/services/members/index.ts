@@ -14,7 +14,7 @@ export const getMemberInfo = async (): Promise<MemberData[]> => {
   });
 
   const responseJSON = await res.json();
-  const memberData = await responseJSON.data;
+  const memberData = responseJSON.data;
 
   return memberData;
 };
