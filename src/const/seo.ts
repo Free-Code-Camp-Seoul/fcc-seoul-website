@@ -1,12 +1,22 @@
-import { DefaultSeoProps } from "next-seo";
+import { Metadata } from "next";
 
-const config: DefaultSeoProps = {
-  title: undefined,
-  defaultTitle: "FreeCodeCamp Seoul 🇰🇷",
-  titleTemplate: "FreeCodeCamp Seoul 🇰🇷 | %s",
+export const defaultMetadata: Metadata = {
+  metadataBase: new URL("https://fcc-seoul.fly.dev"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "en",
+      ko: "ko",
+    },
+  },
+  title: {
+    default: "FreeCodeCamp Seoul 🇰🇷",
+    template: "%s | FreeCodeCamp Seoul 🇰🇷",
+  },
   description:
     "FreeCodeCamp Seoul is a community of developers in Seoul, South Korea. We meet regularly to learn and share our knowledge. Join us!",
-  canonical: "https://fcc-seoul.fly.dev",
+  applicationName: "FreeCodeCamp Seoul",
+  keywords: ["freeCodeCamp", "coding", "meetups", "Seoul", "South Korea"],
   openGraph: {
     type: "website",
     url: "https://fcc-seoul.fly.dev/",
@@ -24,10 +34,10 @@ const config: DefaultSeoProps = {
     ],
   },
   twitter: {
-    handle: "@handle",
+    creator: "@handle",
+    title: "FreeCodeCamp Seoul",
     site: "@site",
-    cardType: "summary_large_image",
+    card: "summary_large_image",
+    images: ["/assets/images/fcc-logo.webp"],
   },
 };
-
-export default config;

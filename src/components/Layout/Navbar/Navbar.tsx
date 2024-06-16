@@ -1,22 +1,23 @@
-import React from "react";
-import Link from "next/link";
-import { useTranslation } from "next-i18next";
-
+import { Link, useRouter, usePathname } from "src/navigation";
+import { useTranslations } from "next-intl";
 import styles from "./Navbar.module.scss";
-import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 import Button from "@/components/Button";
 
 const Navbar = () => {
-  const { t } = useTranslation();
-  const { locale, pathname, asPath, query, push } = useRouter();
+  const t = useTranslations("navbar");
+  const { push } = useRouter();
+  const pathname = usePathname();
+  const params = useParams<{ locale: string }>();
+  const locale = params?.locale;
 
   const handleLocaleChange = () => {
     if (locale === LOCALES.ko.code) {
-      push({ pathname, query }, asPath, { locale: LOCALES.en.code });
+      push(`${pathname}/`, { locale: LOCALES.en.code });
       return;
     }
 
-    push({ pathname, query }, asPath, { locale: LOCALES.ko.code });
+    push(`${LOCALES.ko.code}/${pathname}/`, { locale: LOCALES.ko.code });
   };
 
   return (

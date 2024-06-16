@@ -1,21 +1,19 @@
-import React from "react";
-import Image from "next/image";
-import { useTranslation } from "next-i18next";
-import { NextSeo } from "next-seo";
+"use client";
 
-import meetupImage from "public/assets/images/fcc-location.jpg";
-import kakaoMapsLogo from "public/assets/images/kakao-maps.png";
-import naverMapsLogo from "public/assets/images/naver-maps.png";
-
+import { useTranslations } from "next-intl";
 import styles from "./Events.module.scss";
+
+import Image from "next/image";
+
+import meetupImage from "@/assets/images/fcc-location.jpg";
+import kakaoMapsLogo from "@/assets/images/kakao-maps.png";
+import naverMapsLogo from "@/assets/images/naver-maps.png";
 
 const NAVER_MAPS_URL = "https://naver.me/xaC9isrW";
 const KAKAO_MAPS_URL = "http://kko.to/fkhQtFpFz";
 
-interface EventsProps {}
-
-const Events = ({}: EventsProps) => {
-  const { t } = useTranslation("events");
+const Events = () => {
+  const t = useTranslations("events");
   return (
     <div className={styles.Events}>
       <h1 className={styles.Times}>{t("schedule")}</h1>
@@ -40,7 +38,6 @@ const Events = ({}: EventsProps) => {
         </a>
       </div>
       <p className={styles.Description}>{t("description")}</p>
-      <NextSeo title="Events" />
     </div>
   );
 };

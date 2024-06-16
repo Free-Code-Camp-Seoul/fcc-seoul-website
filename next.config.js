@@ -1,6 +1,7 @@
-const { i18n } = require("./next-i18next.config");
+const createNextIntlPlugin = require("next-intl/plugin");
+const withNextIntl = createNextIntlPlugin();
 
-module.exports = {
+module.exports = withNextIntl({
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -9,7 +10,6 @@ module.exports = {
 
     return config;
   },
-  i18n,
   images: {
     remotePatterns: [
       {
@@ -19,4 +19,4 @@ module.exports = {
       },
     ],
   },
-};
+});

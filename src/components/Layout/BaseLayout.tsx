@@ -1,11 +1,11 @@
-import React from "react";
+"use client";
 
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "@/components/Layout/Footer";
+import Navbar from "@/components/Layout/Navbar";
 
 import { poppins } from "src/const/fonts";
 
-import styles from "./Layout.module.scss";
+import styles from "./BaseLayout.module.scss";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,11 +13,11 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`${styles.Layout} ${poppins.className}`}>
+    <main className={`${styles.Layout} ${poppins.className}`}>
       <Navbar />
       <div className={styles.Content}>{children}</div>
       <Footer />
-    </div>
+    </main>
   );
 };
 
