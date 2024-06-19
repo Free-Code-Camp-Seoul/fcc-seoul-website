@@ -1,22 +1,22 @@
 {
   "navbar": {
-    "home": "Casa",
-    "members": "Miembros",
-    "events": "Eventos"
+    "home": "홈",
+    "members": "회원들",
+    "events": "일정"
   },
   "footer": {
-    "made-with-love": "Made with ❤️ by FCC Seoul"
+    "made-with-love": "FCC서울 회원들 기여 ❤️"
   },
   "home": {
-    "next-meetup": "Next Meetup",
-    "more-info": "More Info"
+    "next-meetup": "다음 모임 일정",
+    "more-info": "추가 정보"
   },
   "members": {
-    "meet-members": "Meet some of our members"
+    "meet-members": "회원들"
   },
   "events": {
-    "schedule": "Every Sunday from 12pm-5pm",
-    "address": "4F Lounge - K-Square Gangnam 2 케이스퀘어강남2",
-    "description": "At FCC Seoul meetups, you're welcome to do whatever you'd like. Some people self-study, or study with others, ask questions, show off projects, talk coding careers, or interview prep. All are welcome! No experience is required or expected. Bringing a 💻 laptop is encouraged. Feel free to join and leave any time between 12pm-5pm. See you soon!"
+    "schedule": "매주 일요일 오후12시-5시",
+    "address": "서울 강남구 강남대로 374 4층",
+    "description": "FCC 서울 모임에서는 본인이 하고 싶은 공부를 하시면 됩니다! 어떤 분들은 자습 하시는 분들도 계시고, 어떤 분들은 여러명과 같이 학습하는 분들도 계십니다. 그 뿐만 아니라 궁금하시는 점이 있으면 주변 회원들에게 질문을 해도 되고 혹시 본인이 개발한 프로젝트가 있으면 그와 관련해서 발표를 해도 무방합니다. 혹시 IT쪽에 커리어를 쌓으시고 싶으신 분들은 주변 회원들에게 질의를 해도 되고 면접 관련해서 팁을 문의해도 좋습니다. IT경력과 무관하게 저희는 모든 분들을 환영합니다! ~ 그러나 아무래도 노트북 들고오는 것은 필수는 아니나 권장 사항입니다! 💻 마지막으로 저희는 오후12시 부터 오후5시까지 모임을 가지고 중간에 약속 있으시거나 다른 일정이 있으신 분들은 중간에 가셔도 됩니다!"
   }
 }
