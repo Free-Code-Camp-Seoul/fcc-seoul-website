@@ -17,7 +17,7 @@ const Navbar = () => {
       return;
     }
 
-    push(`${LOCALES.ko.code}/${pathname}/`, { locale: LOCALES.ko.code });
+    push(`${pathname}/`, { locale: LOCALES.ko.code });
   };
 
   return (
