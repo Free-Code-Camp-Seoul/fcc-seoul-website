@@ -11,6 +11,7 @@ module.exports = withNextIntl({
     return config;
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
