@@ -15,7 +15,7 @@ To view our site and see your contributions, visit <https://fcc-seoul.fly.dev>
 - Husky setup (only once)
 
   ```bash
-  yarn prepare
+  yarn run postinstall
   ```
 
 - Run dev mode
