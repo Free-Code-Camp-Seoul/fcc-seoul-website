@@ -23,7 +23,7 @@
     "sass": "^1.79.4"
   },
   "devDependencies": {
-    "@svgr/webpack": "^6.5.1",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^22.5.4",
     "@types/react": "18.0.9",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
