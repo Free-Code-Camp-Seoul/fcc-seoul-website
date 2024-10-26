@@ -4,7 +4,7 @@ export const getMeetupInfo = async () => {
   const meetupResponse = await fetch(MEETUP_RSS_LINK, { cache: "no-store" });
   const meetupText = await meetupResponse.text();
   // create an array with all the meetup times from the RSS feed"
-  const eventList = meetupText.match(/<p>Sunday.+PM<\/p>/g);
+  const eventList = meetupText.match(/<p>Sunday.+M<\/p>/g);
 
   // remove the html tags and timezone from the array
   const trimmedEventList = eventList?.map((event) => {
