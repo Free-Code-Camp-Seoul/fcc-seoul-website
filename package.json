@@ -20,16 +20,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
-    "sass": "^1.77.8"
+    "sass": "^1.79.4"
   },
   "devDependencies": {
-    "@svgr/webpack": "^6.5.1",
-    "@types/node": "^22.5.4",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^22.7.5",
     "@types/react": "18.0.9",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint-config-next": "^14.2.5",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
     "plop": "^3.1.2",
@@ -39,7 +39,7 @@
     "stylelint-config-standard": "^29.0.0",
     "stylelint-config-standard-scss": "^6.0.0",
     "stylelint-order": "^6.0.4",
-    "stylelint-prettier": "^2.0.0",
+    "stylelint-prettier": "^3.0.0",
     "typescript": "^5.5.4",
     "typescript-plugin-css-modules": "^3.4.0"
   },
