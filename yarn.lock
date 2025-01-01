@@ -4804,10 +4804,10 @@ needle@^3.1.0:
     iconv-lite "^0.6.3"
     sax "^1.2.4"
 
-negotiator@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
-  integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
+negotiator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
+  integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
 
 neo-async@^2.6.2:
   version "2.6.2"
@@ -4825,14 +4825,14 @@ next-i18next@^13.3.0:
     hoist-non-react-statics "^3.3.2"
     i18next-fs-backend "^2.1.1"
 
-next-intl@^3.19.0:
-  version "3.19.0"
-  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-3.19.0.tgz#2c5f43f0f547f6ff19b0ec818b78fd92c67cabf8"
-  integrity sha512-ciiHYBwR3ztoMdJZgFmt0LII7GYTsLA/MFt3y681q4Lw4fI5EYNCZSYb9XA/BIt3ZX5S1TLUP1uOERy1dIQvMg==
+next-intl@^3.26.3:
+  version "3.26.3"
+  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-3.26.3.tgz#4991ba09de7d09d8a3e1a75b2cdf28a9648a4b70"
+  integrity sha512-6Y97ODrDsEE1J8cXKMHwg1laLdtkN66QMIqG8BzH4zennJRUNTtM8UMtBDyhfmF6uiZ+xsbWLXmHUgmUymUsfQ==
   dependencies:
     "@formatjs/intl-localematcher" "^0.5.4"
-    negotiator "^0.6.3"
-    use-intl "^3.19.0"
+    negotiator "^1.0.0"
+    use-intl "^3.26.3"
 
 next@^14.2.9:
   version "14.2.9"
@@ -6706,10 +6706,10 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha512-Am1ousAhSLBeB9cG/7k7r2R0zj50uDRlZHPGbazid5s9rlF1F/QKYObEKSIunSjIOkJZqwRRLpvewjEkM7pSqg==
 
-use-intl@^3.19.0:
-  version "3.19.0"
-  resolved "https://registry.yarnpkg.com/use-intl/-/use-intl-3.19.0.tgz#ea05d41617b1a5fe67066a556d31207cf37f4d6d"
-  integrity sha512-JOA73+YdtArxkvFKrneLAhH55m+x+sA9Wj8w8rYkHkHvcW/76w5T3szSmBG063vH3UqLoIKlsDVBBUfpkB7GMg==
+use-intl@^3.26.3:
+  version "3.26.3"
+  resolved "https://registry.yarnpkg.com/use-intl/-/use-intl-3.26.3.tgz#948c37388c1bfc894504f040930a32791b0158cf"
+  integrity sha512-yY0a2YseO17cKwHA9M6fcpiEJ2Uo81DEU0NOUxNTp6lJVNOuI6nULANPVVht6IFdrYFtlsMmMoc97+Eq9/Tnng==
   dependencies:
     "@formatjs/fast-memoize" "^2.2.0"
     intl-messageformat "^10.5.14"
