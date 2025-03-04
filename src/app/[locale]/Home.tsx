@@ -17,6 +17,8 @@ function Home({ eventList }: HomeProps) {
   const t = useTranslations("home");
   const { View } = useLottie(ANIMATION_OPTIONS);
 
+  const hasNoEvents = eventList.length === 0;
+
   const nextEvent = new Date(eventList?.[0]).toLocaleDateString("en-US", {
     weekday: "long",
     month: "long",
@@ -28,7 +30,9 @@ function Home({ eventList }: HomeProps) {
       <h1 className={styles.Title}>FreeCodeCamp Seoul 🇰🇷</h1>
       <div className={styles.NextMeetupContainer}>
         <h1 className={styles.NextMeetupTitle}>{t("next-meetup")}</h1>
-        <p className={styles.NextMeetupDate}>{nextEvent}</p>
+        <p className={styles.NextMeetupDate}>
+          {hasNoEvents ? "TBD" : nextEvent}
+        </p>
         <a
           href={MEETUP_LINK}
           target="_blank"
